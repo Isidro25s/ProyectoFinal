@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.valorant">
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Valorant">
+        <activity android:name=".items.ArmaItem"></activity>
+        <activity android:name=".items.MapaItem" />
+        <activity
+            android:name=".items.AgenteItem"
+            android:label="@string/app_agente" />
+        <activity
+            android:name=".menu.armas.Armas"
+            android:label="@string/app_armas" />
+        <activity
+            android:name=".menu.mapas.Mapas"
+            android:label="@string/app_mapas" />
+        <activity
+            android:name=".menu.agentes.Agentes"
+            android:label="@string/app_agentes" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

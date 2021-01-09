@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".items.AgenteItem">
+
+    <ScrollView
+        android:id="@+id/element_agente"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="16dp"
+                android:background="@color/grey"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:id="@+id/imagen_agente"
+                    android:layout_width="0dp"
+                    android:layout_height="400dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintBottom_toTopOf="@+id/nombre_agente"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/c_breach" />
+
+                <TextView
+                    android:id="@+id/nombre_agente"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingStart="20dp"
+                    android:text="BREACH"
+                    android:textColor="@color/dark_white"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toTopOf="@+id/biografia"
+                    app:layout_constraintEnd_toStartOf="@+id/rol_container"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imagen_agente" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/rol_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="16dp"
+                    android:checkable="false"
+                    android:text="@string/r_iniciador"
+                    android:textColor="@color/dark_white"
+                    android:textAppearance="@style/chipTextAppearance"
+                    app:chipBackgroundColor="@color/light_grey"
+                    app:chipIcon="@drawable/r_initiator"
+                    app:layout_constraintBottom_toTopOf="@+id/biografia"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/nombre_agente"
+                    app:layout_constraintTop_toBottomOf="@+id/agente" />
+
+                <TextView
+                    android:id="@+id/biografia"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:letterSpacing="0.1"
+                    android:text="Biografia"
+                    android:textColor="@color/dark_white"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@+id/agente_bio"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/nombre_agente" />
+
+                <TextView
+                    android:id="@+id/agente_bio"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="24dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="6sp"
+                    android:text="@string/c_breach_description"
+                    android:textColor="@color/light_white"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/biografia" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/grey"
+                android:elevation="4dp">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="6sp"
+                    android:text="Habilidades"
+                    android:textColor="@color/dark_white"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toTopOf="@+id/card_q"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/card_q"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/dark_grey"
+                    android:elevation="8dp"
+                    android:paddingBottom="2dp"
+                    app:layout_constraintBottom_toTopOf="@+id/card_e"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+                    <ImageView
+                        android:id="@+id/icon_habilidad_q"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/nombre_habilidad_q"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/c_breach_q" />
+
+                    <TextView
+                        android:id="@+id/nombre_habilidad_q"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Fulgor"
+                        android:textColor="@color/dark_white"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/icon_habilidad_q"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/card_e"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/dark_grey"
+                    android:elevation="8dp"
+                    android:paddingBottom="4dp"
+                    app:layout_constraintBottom_toTopOf="@+id/card_c"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/card_q">
+
+                    <ImageView
+                        android:id="@+id/icon_habilidad_e"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/nombre_habilidad_e"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/c_breach_e" />
+
+                    <TextView
+                        android:id="@+id/nombre_habilidad_e"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Falla Sísmica"
+                        android:textColor="@color/dark_white"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/icon_habilidad_e"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/card_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/dark_grey"
+                    android:elevation="8dp"
+                    android:paddingBottom="4dp"
+                    app:layout_constraintBottom_toTopOf="@+id/card_x"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/card_e">
+
+                    <ImageView
+                        android:id="@+id/icon_habilidad_c"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/nombre_habilidad_c"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/c_breach_c" />
+
+                    <TextView
+                        android:id="@+id/nombre_habilidad_c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Réplica"
+                        android:textColor="@color/dark_white"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/icon_habilidad_c"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/card_x"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/dark_grey"
+                    android:elevation="8dp"
+                    android:paddingBottom="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/card_c">
+
+                    <ImageView
+                        android:id="@+id/icon_habilidad_x"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/nombre_habilidad_x"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/c_breach_x" />
+
+                    <TextView
+                        android:id="@+id/nombre_habilidad_x"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Trueno Rodante"
+                        android:textColor="@color/dark_white"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/icon_habilidad_x"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

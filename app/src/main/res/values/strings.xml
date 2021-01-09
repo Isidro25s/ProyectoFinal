@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Valorant</string>
+    <string name="app_menu">Menu</string>
+    <string name="app_agentes">Agentes</string>
+    <string name="app_agente">Agente</string>
+    <string name="app_mapas">Mapas</string>
+    <string name="app_armas">Armas</string>
+
+    <string name="mapas">Mapas</string>
+    <string name="agentes">Agentes</string>
+    <string name="armas">Armas</string>
+
+    <string name="rol_duelist">DUELIST</string>
+
+    <string name="ejemplo">EJEMPLO</string>
+
+    <string name="jett_name">JETT</string>
+    <string name="jett_description">PROVIENE DE COREA DEL SUR. EL ÁGIL Y EVASIVO ESTILO DE PELEA DE JETT LE PERMITE ENFRENTARSE A RIESGOS QUE OTROS NO PUEDEN. ES IMPARABLE EN TODOS LOS ENFRENTAMIENTOS Y ACABA CON SUS ENEMIGOS ANTES DE QUE SEPAN QUÉ LOS ATACÓ.</string>
+    <string name="jett_ab1">RÁFAGA ASCENDENTE</string>
+    <string name="jett_ab1Dis">PROPULSA A JETT HACIA EL AIRE AL INSTANTE.</string>
+    <string name="jett_ab2">IMPULSO CICLÓN</string>
+    <string name="jett_ab2Dis">PROPULSA AL INSTANTE A JETT HACIA LA DIRECCIÓN A LA QUE SE DIRIGE. SI NO SE ESTÁ MOVIENDO, SE PROPULSARÁ HACIA ADELANTE.</string>
+    <string name="jett_ab3">NUBE EXPLOSIVA</string>
+    <string name="jett_ab3Dis">LANZA UN PROYECTIL AL INSTANTE QUE SE CONVIERTE EN UNA NUBE QUE BLOQUEA LA VISIÓN AL IMPACTAR ALGUNA SUPERFICIE. MANTÉN PRESIONADA LA TECLA DE LA HABILIDAD PARA CAMBIAR LA TRAYECTORIA DEL HUMO HACIA DONDE APUNTES.</string>
+    <string name="jett_ab4">TORMENTA DE CUCHILLAS</string>
+    <string name="jett_ab4Dis">EQUIPA UN CONJUNTO DE CUCHILLOS DE GRAN PRECISIÓN QUE SE RECARGAN AL ASESINAR A UN OPONENTE. DISPARA PARA LANZAR UN CUCHILLO HACIA TU OBJETIVO Y USA EL DISPARO SECUNDARIO PARA LANZAR TODOS LOS CUCHILLOS RESTANTES.</string>
+    <string name="r_iniciador">INICIADOR</string>
+    <string name="c_breach_description">Breach, el sueco biónico, lanza poderosas ráfagas cinéticas para abrirse paso a la fuerza a través del territorio enemigo. El daño y la interrupción que inflige garantizarán que ninguna pelea sea justa.</string>
+    <string name="hab_q">Equipa una carga cegadora y dispara para lanzar una ráfaga de acción rápida a través de una pared. La carga detonará y cegará a todos los jugadores que la vean.</string>
+    <string name="hab_e">Equipa un rayo sísmico y mantén presionado el botón de disparo para aumentar la distancia. Suéltalo para iniciar el temblor y aturdir a todos los jugadores que estén en la zona.</string>
+    <string name="hab_c">Equipa una carga de fusión y dispara para lanzar una ráfaga de acción lenta a través de una pared. La ráfaga infligirá daño masivo a todos los que estén en su alcance.</string>
+    <string name="hab_x">Equipa una carga sísmica y dispara para enviar un temblor en cascada por una gran zona cónica. El temblor aturde y lanza por el aire a todos los que impacta.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="imagenes">Imagenes</string>
+    <string name="caracteristicas">Caracteristicas</string>
+
+
+</resources>
